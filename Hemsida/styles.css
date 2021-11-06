@@ -141,15 +141,30 @@ hr {
 /* SHOWCASE END */
 
 /* ABOUT US */
-.aboutus {
+
+.flex-container {
   display: flex;
-  flex-direction: row;
-  align-content: flex-end;
-  height: 800px;
+  margin-top: 100px;
+  align-content: center;
+  justify-content: space-around;
 }
 
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 100px;
+}
 
+.aboutus h1 {
+  font-family: 'Roboto Slab';
+  font-size: 40px;
+  color: var(--tertiary--color);
+}
 
+.text {
+margin-left: -100px;
+}
 
 @media (max-width: 905px) {
   .top-menu, hr, img {
