@@ -22,6 +22,7 @@ color: var(--secondary-color);
   margin: auto;
 }
 
+
 /* TOP-MENU */
 .top-menu .container {
   display: flex;
@@ -204,6 +205,71 @@ hr {
   font-family: 'roboto slab';
 }
 
+/* ABOUT US END */
+
+/* SERVICES */
+
+.services {
+  background-color: #F7F7F7;
+  padding-top: 100px;
+  /* height: 800px; */
+}
+
+.service-text {
+  text-align: center;
+  font-weight: normal;
+  font-size: 40px;
+  color: var(--tertiary--color);
+}
+
+.box2 {
+  border: 2px solid var(--hover--color);
+  margin: 20px auto;
+  width: 30.5%;
+}
+
+.service-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 50px;
+}
+
+.service-box {
+  flex-basis: 30%;
+  border: 1px solid transparent;
+  background-color: #fff;
+  padding: 50px;
+  margin: 15px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.service-logo {
+  background-color: var(--hover--color);
+  padding: 25px;
+  width: 33%;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+.service-box h4 {
+  font-size: 22px;
+  font-family: 'Roboto Slab';
+  font-weight: normal;
+  color: var(--tertiary--color);
+  margin: 45px 0 0 0;
+}
+
+.service-box p {
+  font-size: 18px;
+  /* margin: 50px; */
+  line-height: 30px;
+  padding: 20px;
+}
+
 @media (max-width: 905px) {
   .top-menu, hr, img {
     display: none;
@@ -230,4 +296,15 @@ hr {
 .btn:hover {
   cursor: pointer;
   background-color: var(--primary-color);
+}
+
+.service-box:hover .service-logo {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 0 10px #D4EEFB;
+  transition: 0.3s;
+}
+
+.service-box:hover {
+  box-shadow: 0 5px 20px 2px #dad8d8;
+  /* opacity: 100px; */
 }
