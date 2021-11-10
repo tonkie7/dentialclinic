@@ -1,0 +1,56 @@
+:root {
+  /* --primary-color: red; */
+  --secondary-color: #626262;
+  --tertiary--color: #2BAAEC;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: 'Roboto';
+}
+
+/* HELPING CLASS */
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+/* HELPING CLASS END */
+
+/* TOPMENU */
+
+.topmenu {
+  justify-content: space-between;
+  padding: 20px 0 20px;
+}
+
+#open-times {
+ color: var(--secondary-color);
+ margin-left: 10px;
+}
+
+.social-media {
+  margin-left: 20px;
+  color: var(--tertiary--color);
+}
+
+/* MAIN MENU */
+
+.main-menu {
+  
+}
+
+
+@media (max-width: 712px) {
+  .topmenu {display: none;}
+}

@@ -270,6 +270,50 @@ hr {
   padding: 20px;
 }
 
+.appointment {
+  background-color: #4EB4E8;
+  /* display: flex; */
+  /* margin-top: 50px; */
+}
+
+.text-button {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 45px 0 45px; */
+  /* margin: 20px; */
+  padding: 60px 0 60px 0;
+  font-size: 30px;
+  font-family: 'robot slab';
+  color: white;
+  /* border-radius: 20px; */
+  align-items: center;
+}
+
+.text-button h4 {
+  font-weight: normal;
+  
+}
+
+.appointment-button {
+  color: var(--primary-color);
+  background-color: #fff;
+  padding: 20px 50px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Roboto;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #f3fbff;
+  padding: 20px;
+  text-align: center;
+}
+
+
 @media (max-width: 905px) {
   .top-menu, hr, img {
     display: none;
