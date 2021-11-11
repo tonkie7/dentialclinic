@@ -1,7 +1,8 @@
 :root {
-  /* --primary-color: red; */
+  --primary-color: #363636;
   --secondary-color: #626262;
-  --tertiary--color: #2BAAEC;
+  --tertiary-color: #2BAAEC;
+  --hover-color: #25e6c8;
 }
 
 * {
@@ -14,15 +15,31 @@ body, html {
   font-family: 'Roboto';
 }
 
-/* HELPING CLASS */
+/* HELP CLASSES */
 
 .container {
-  width: 70%;
+  width: 100%;
   margin: auto;
 }
 
 .d-flex {
   display: flex;
+}
+
+.ff {
+  font-family: 'Roboto Slab';
+}
+
+.mt {
+  margin-top: 45px;
+}
+
+.w-80 { 
+  width: 80%;
+}
+
+a:hover {
+  color: var(--hover-color);
 }
 
 /* HELPING CLASS END */
@@ -41,16 +58,158 @@ body, html {
 
 .social-media {
   margin-left: 20px;
-  color: var(--tertiary--color);
+  color: var(--tertiary-color);
+}
+
+.box {
+  border-bottom: 1px solid #707070;
 }
 
 /* MAIN MENU */
 
 .main-menu {
-  
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  margin-left: 15px;
+}
+
+.main-menu h1 {
+  font-size: 24px;
+  font-weight: normal;
+  color: var(--primary-color);
+}
+
+.main-menu span {
+  color: var(--tertiary--color);
+}
+
+.main-menu p {
+  color: var(--secondary-color);
+}
+
+.mainmenu-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.mainmenu-nav a {
+  text-decoration: none;
+  margin-left: 35px;
+  color: var(--primary-color);
+}
+
+/* .mainmenu-nav a:hover {
+  color: var(--hover-color);
+} */
+
+.hamburger {
+  display: flex;
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.hamburger {
+  color: var(--primary-color);
+  border: none;
+}
+
+/* MAIN MENU END */
+
+/* SHOWCASE */
+
+.showcase {
+  background-color: #DEDEDE;
+  /* background-size: cover; */
+  /* height: 700px; */
+  padding-top: 20px;
+}
+
+.showcase .container {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+}
+
+.showcasetext {
+  flex-basis: 50%;
+  /* padding: 100px; */
+  /* margin: 100px; */
+}
+
+.content {
+  align-self: center;
 }
 
 
-@media (max-width: 712px) {
-  .topmenu {display: none;}
+
+/* .showcase-text {
+  font-size: 60px;
+  width: 90%;
+  font-weight: normal;
+}
+
+.showcase-p {
+  width: 63%;
+} */
+
+.btn {
+  width: 50%;
+}
+
+
+@media (max-width: 803px) {
+  .topmenu, .box, .mainmenu-nav, #woman { display: none; }
+  .container { 
+    width: 100%; 
+    padding: 10px 20px; }
+  .main-menu { margin: 0; }
+  #tand-logo { max-width: 30px; }
+  .logo-text { font-size: 10px}
+  .logo-text h1 { font-size: 15px; }
+  
+
+  .showcase .container { 
+    padding: 0 15px 20px ; 
+    height: auto;
+    text-align: center;
+    display: block;
+  }
+
+  .content {
+    display: block;
+  }
+
+  .showcase h2 { 
+    font-size: 20px; 
+    text-align: center;  
+    margin-bottom: 15px; 
+    width: 100%;
+  }
+
+  .showcase p { 
+    font-size: 14px;
+    margin-bottom: 20px; 
+    text-align: start; 
+    width: 100%;
+  }
+  /* .showcase { display: block;} */
+}
+
+@media (min-width: 770px) {
+  .hamburger { display: none; }
+  .btn { width: auto;}
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
