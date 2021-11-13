@@ -227,31 +227,57 @@ a:hover {
   color: var(--primary-color);
 }
 
+/* OUR SERVICES */
 
 .our-services {
   background-color: #f7f7f7;
   text-align: center;
 }
+
 .our-services h1 {
   border-bottom: 3px solid var(--hover-color);
+  width: 31.7%;
+  margin: 0 auto 60px;
+  padding: 50px 0 20px;
+
 }
 
-.service-logo img {
-  font-size: 50px;
-  color: red;
-  background-color: red;
-  background-size: 10px 20px;
+.service-logo {
+  background-color: var(--hover-color);
+  padding: 25px;
+  width: 33%;
+  margin: 25px auto;
+  border-radius: 50%;
 }
 
-.service-pic {
-  background-size: 10px 20px;
+/* APPOINTMENT */
+
+.appointment {
+  background-color: rgb(43, 170, 236, .8);
+  color: #fff;
+  padding: 10px;
+}
+
+.appointment h5 {
+  font-weight: normal;
+}
+
+.appointment .btn {
+  color: var(--tertiary-color);
 }
 
 
+/* FOOTER */
+
+.footer {
+  background-color: var(--tertiary-color);
+  color: rgb(243, 251, 255, .6);
+  text-align: center;
+}
 
 
 @media (max-width: 992px) {
-  .topmenu, .box, .mainmenu-nav, #woman, #guy, #line, .service-logo { display: none; }
+  .topmenu, .box, .mainmenu-nav, #woman, #guy, #line, .service-logo, .service-box p { display: none; }
   .container { 
     width: 100%; 
     padding: 10px 20px; }
@@ -349,16 +375,53 @@ a:hover {
   .our-services h1 {
     font-size: 25px;
     margin: 10px 0 ;
-    padding-bottom: 10px;
+    padding: 0 0 10px;
+    width: 100%;
+  }
+
+  .service-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+  }
+    
+  .service-box {
+    width: 50%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+    
+  .service-box h4 {
+    color: var(--primary-color);
+    text-align: left;
+    margin-left: 10px;
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .service-box h4:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+  }
+
+  .appointment {
+    text-align: center;
+    font-size: 20px;
     }
+
+    .appointment h5 {
+      margin-bottom: 20px;
+    }
+
+  .footer {
+    padding: 10px;
+    font-size: 14px;
+  }
 
   }
 
 
-@media (min-width: 960px) {
-  .hamburger { display: none; }
-  
-}
 
 @media (min-width: 992px) {
   .container {
@@ -368,6 +431,51 @@ a:hover {
   .context-text {
     width: 75%;
   }
+  
+  .service-box {
+    background-color: #fff;
+    flex-basis: 32%;
+    border-radius: 10px;
+    padding: 50px;
+  }
+  
+  .service-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 28px;
+    justify-content: space-between;
+  }
+
+  .service-box h4 {
+    font-size: 22px;
+    font-weight: normal;
+    font-family: 'Roboto Slab';
+    color: var(--primary-color);
+    margin: 45px 0 15px ;
+  }
+
+  .service-box p {
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  #inspection {
+    padding: 10px 30px 0 30px;
+  }
+
+  #removal {
+    padding: 10px 15px 0 15px;
+  }
+
+  #polish {
+    padding: 10px 20px 0 20px;
+  }
+
+  #protection {
+    padding: 10px 50px 0 50px;
   }
 
 }
