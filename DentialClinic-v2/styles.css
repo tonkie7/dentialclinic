@@ -45,10 +45,6 @@ body, html {
   margin: auto;
 }
 
-a:hover {
-  color: var(--hover-color);
-}
-
 
 .btn-primary {
   background-color: var(--hover-color);
@@ -130,6 +126,7 @@ a:hover {
   display: flex;
   margin-left: auto;
   font-size: 20px;
+  cursor: pointer; 
 }
 
 .hamburger {
@@ -248,6 +245,12 @@ a:hover {
   width: 33%;
   margin: 25px auto;
   border-radius: 50%;
+}
+
+.service-box:hover .service-logo {
+  background-color: var(--tertiary-color);
+  box-shadow: 0 0 0 10px #D4EEFB;
+  transition: 0.3s;
 }
 
 /* APPOINTMENT */
@@ -419,6 +422,15 @@ a:hover {
     font-size: 14px;
   }
 
+  .btn-primary:hover {
+    background-color: var(--tertiary-color);
+  }
+  
+  .btn:hover {
+    background-color: var(--tertiary-color);
+    color: #fff;
+  }
+
   }
 
 
@@ -427,7 +439,9 @@ a:hover {
   .container {
     max-width: 1400px;
   }
-  .hamburger { display: none; }
+  .hamburger { 
+    display: none;
+  }
   .context-text {
     width: 75%;
   }
@@ -437,6 +451,11 @@ a:hover {
     flex-basis: 32%;
     border-radius: 10px;
     padding: 50px;
+    cursor: pointer;
+  }
+
+  .service-box:hover {
+    box-shadow: 0 0 30px 1px #b6b5b5;
   }
   
   .service-boxes {
@@ -462,6 +481,10 @@ a:hover {
     padding: 10px;
   }
 
+  .our-services {
+    padding-bottom: 140px;
+  }
+
   #inspection {
     padding: 10px 30px 0 30px;
   }
@@ -478,4 +501,48 @@ a:hover {
     padding: 10px 50px 0 50px;
   }
 
+  .appointment {
+    /* margin-top: 50px; */
+  }
+
+  .appointment-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0 60px;
+  }
+
+  .appointment-content h5 {
+    font-size: 30px;
+    font-family: 'Roboto Slab';
+  }
+
+  .appointment-content .btn {
+    width: 20%;
+    color: var(--tertiary-color);
+    border: 2px solid transparent;
+  }
+
+  .footer {
+    padding: 30px;
+  }
+
+  .social-media:hover {
+    color: var(--hover-color);
+  }
+
+  a:hover {
+    color: var(--tertiary-color);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--tertiary-color);
+  }
+  
+  .btn:hover {
+    background-color: var(--tertiary-color);
+    color: #fff;
+    border: 2px solid #fff;
+    transition: .3s;
+  }
 }
