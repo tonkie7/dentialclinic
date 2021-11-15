@@ -501,10 +501,6 @@ body, html {
     padding: 10px 50px 0 50px;
   }
 
-  .appointment {
-    /* margin-top: 50px; */
-  }
-
   .appointment-content {
     display: flex;
     justify-content: space-between;
@@ -539,7 +535,7 @@ body, html {
     background-color: var(--tertiary-color);
   }
   
-  .btn:hover {
+  .btn-secondary:hover {
     background-color: var(--tertiary-color);
     color: #fff;
     border: 2px solid #fff;
